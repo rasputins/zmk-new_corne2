@@ -34,6 +34,15 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        tap_hold: tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_HOLD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <30>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -50,55 +59,139 @@
         tap-ms = <100>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        tru {
+            bindings = <&kp LBKT>;
+            key-positions = <4 5>;
+            slow-release;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        comb {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <18 5>;
+            slow-release;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        comb3 {
+            bindings = <&kp LPAR>;
+            key-positions = <3 2>;
+            slow-release;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        comb4 {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <7 8>;
+            slow-release;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        comb5 {
+            bindings = <&kp RBRC>;
+            key-positions = <7 22>;
+            slow-release;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        comb6 {
+            bindings = <&kp RPAR>;
+            key-positions = <9 10>;
+            slow-release;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        comb7 {
+            bindings = <&kp MINUS>;
+            key-positions = <33 18>;
+            slow-release;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        comb8 {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <33 32>;
+            slow-release;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        comb9 {
+            bindings = <&kp PLUS>;
+            key-positions = <22 36>;
+            slow-release;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        comb10 {
+            bindings = <&kp EQUAL>;
+            key-positions = <36 37>;
+            slow-release;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        new_default {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB                    &kp Q  &kp W  &kp E                          &kp R         &kp T                                               &kp UP                &kp Y                  &kp U      &kp I                     &kp O    &kp P     &kp LEFT_BRACKET
+&tap_hold CAPSLOCK ESCAPE  &kp A  &kp S  &kp D                          &kp F         &kp G                                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                  &kp J      &kp K                     &kp L    &kp SEMI  &kp SQT
+&kp LSHFT                  &kp Z  &kp X  &kp C                          &kp V         &kp B                        &kp SPACE              &kp DOWN              &kp N                  &kp M      &kp COMMA                 &kp DOT  &kp FSLH  &tap_hold RIGHT_SHIFT ENTER
+                                         &tap_hold RIGHT_ALT BACKSPACE  &lt 2 PERIOD  &tap_hold RIGHT_SHIFT SPACE                                               &tap_hold RCTRL ENTER  &lt 1 DEL  &tap_hold LGUI BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        lower_layer {
-            display-name = "NUMBER";
+        layer_home_row {
+            display-name = "home_row";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &kp A         &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&kp TAB                    &kp Q             &kp W             &kp E                          &kp R               &kp T                                               &kp UP                &kp Y                  &kp U               &kp I                     &kp O             &kp P                &kp LEFT_BRACKET
+&tap_hold CAPSLOCK ESCAPE  &tap_hold LGUI A  &tap_hold LALT S  &tap_hold CAPSLOCK D           &tap_hold LSHIFT F  &kp G                                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                  &tap_hold RSHIFT J  &tap_hold CAPSLOCK K      &tap_hold LALT L  &tap_hold RGUI SEMI  &kp SQT
+&kp LSHFT                  &kp Z             &kp X             &kp C                          &kp V               &kp B                        &kp SPACE              &kp DOWN              &kp N                  &kp M               &kp COMMA                 &kp DOT           &kp FSLH             &tap_hold RIGHT_SHIFT ENTER
+                                                               &tap_hold RIGHT_ALT BACKSPACE  &lt 3 PERIOD        &tap_hold RIGHT_SHIFT SPACE                                               &tap_hold RCTRL ENTER  &lt 1 DEL           &tap_hold LGUI BACKSLASH
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
+        layer_num {
+            display-name = "num_row";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&kp GRAVE                 &kp NUMBER_1                &kp NUMBER_2            &kp NUMBER_3                   &kp NUMBER_4             &kp N5                                              &kp UP                &kp N6                 &kp N7                 &kp N8                    &kp N9                           &kp N0               &kp MINUS
+&tap_hold CAPSLOCK TILDE  &tap_hold LGUI EXCLAMATION  &tap_hold LALT AT_SIGN  &tap_hold CAPSLOCK HASH        &tap_hold LSHIFT DOLLAR  &kp PERCENT                               &kp LEFT  &kp ENTER  &kp RIGHT  &kp CARET              &tap_hold RSHIFT AMPS  &tap_hold CAPSLOCK ASTRK  &tap_hold LALT LEFT_PARENTHESIS  &tap_hold RGUI RPAR  &kp UNDER
+&tap_hold LSHFT F12       &kp F1                      &kp F2                  &kp F3                         &kp F4                   &kp F5                       &kp SPACE              &kp DOWN              &kp F6                 &kp F7                 &kp F8                    &kp F9                           &kp F10              &tap_hold RIGHT_SHIFT F11
+                                                                              &tap_hold RIGHT_ALT BACKSPACE  &lt 2 PERIOD             &tap_hold RIGHT_SHIFT SPACE                                               &tap_hold RCTRL ENTER  &lt 3 DEL              &tap_hold LGUI BACKSLASH
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        layer_3 {
-            display-name = "Fn";
+        layer_7 {
+            display-name = "home_row";
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &kp J      &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &kp A      &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2                   &bt BT_SEL 3   &bt BT_SEL 4                                        &kp UP                &kp HOME               &kp PAGE_DOWN          &kp PG_UP                 &kp END               &kp INS                     &kp DELETE
+&bt BT_CLR      &bt BT_DISC 0    &bt BT_DISC 1   &bt BT_DISC 2                  &bt BT_DISC 3  &bt BT_DISC 4                             &kp LEFT  &kp ENTER  &kp RIGHT  &kp LEFT               &tap_hold RSHIFT DOWN  &tap_hold CAPSLOCK UP     &tap_hold LALT RIGHT  &tap_hold RGUI PRINTSCREEN  &kp C_MENU
+&rgb_ug RGB_ON  &rgb_ug RGB_OFF  &studio_unlock  &sys_reset                     &bootloader    &kp B                        &kp SPACE              &kp DOWN              &out OUT_BLE           &kp C_VOL_UP           &kp C_VOL_DN              &kp C_MUTE            &out OUT_USB                &out OUT_BLE
+                                                 &tap_hold RIGHT_ALT BACKSPACE  &lt 3 PERIOD   &tap_hold RIGHT_SHIFT SPACE                                               &tap_hold RCTRL ENTER  &lt 3 DEL              &tap_hold LGUI BACKSLASH
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
