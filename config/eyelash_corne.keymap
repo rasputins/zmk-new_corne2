@@ -183,7 +183,7 @@
         };
 
         layer_7 {
-            display-name = "home_row";
+            display-name = "muv";
             bindings = <
 &bt BT_CLR_ALL  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2                   &bt BT_SEL 3   &bt BT_SEL 4                                        &kp UP                &kp HOME               &kp PAGE_DOWN          &kp PG_UP                 &kp END               &kp INS                     &kp DELETE
 &bt BT_CLR      &bt BT_DISC 0    &bt BT_DISC 1   &bt BT_DISC 2                  &bt BT_DISC 3  &bt BT_DISC 4                             &kp LEFT  &kp ENTER  &kp RIGHT  &kp LEFT               &tap_hold RSHIFT DOWN  &tap_hold CAPSLOCK UP     &tap_hold LALT RIGHT  &tap_hold RGUI PRINTSCREEN  &kp C_MENU
