@@ -181,7 +181,7 @@ layers:
   - '&studio_unlock'
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
-  - B
+  - C
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - OUT BLE
