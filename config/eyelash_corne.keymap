@@ -151,10 +151,10 @@
         new_default {
             display-name = "QWERTY";
             bindings = <
-&kp TAB              &kp Q  &kp W  &kp E                    &kp R         &kp T                                         &kp UP                &kp Y            &kp U      &kp I               &kp O    &kp P     &kp LEFT_BRACKET
-&mt CAPSLOCK ESCAPE  &kp A  &kp S  &kp D                    &kp F         &kp G                               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J      &kp K               &kp L    &kp SEMI  &kp SQT
-&kp LSHFT            &kp Z  &kp X  &kp C                    &kp V         &kp B                  &kp SPACE              &kp DOWN              &kp N            &kp M      &kp COMMA           &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
-                                   &mt RIGHT_ALT BACKSPACE  &lt 2 PERIOD  &mt RIGHT_SHIFT SPACE                                               &mt RCTRL ENTER  &lt 1 DEL  &mt LGUI BACKSLASH
+&kp TAB              &kp Q  &kp W  &kp E              &kp R         &kp T                                         &kp UP                &kp Y            &kp U            &kp I               &kp O    &kp P     &kp LEFT_BRACKET
+&mt CAPSLOCK ESCAPE  &kp A  &kp S  &kp D              &kp F         &kp G                               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J            &kp K               &kp L    &kp SEMI  &kp SQT
+&kp LSHFT            &kp Z  &kp X  &kp C              &kp V         &kp B                  &kp SPACE              &kp DOWN              &kp N            &kp M            &kp COMMA           &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
+                                   &mt RIGHT_ALT DEL  &lt 2 PERIOD  &mt RIGHT_SHIFT ENTER                                               &mt RCTRL SPACE  &lt 1 BACKSPACE  &mt LGUI BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -163,10 +163,10 @@
         layer_home_row {
             display-name = "home_row";
             bindings = <
-&kp TAB              &kp Q       &kp W       &kp E                    &kp R         &kp T                                         &kp UP                &kp Y            &kp U         &kp I               &kp O       &kp P          &kp LEFT_BRACKET
-&mt CAPSLOCK ESCAPE  &mt LGUI A  &mt LALT S  &mt CAPSLOCK D           &mt LSHIFT F  &kp G                               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &mt RSHIFT J  &mt CAPSLOCK K      &mt LALT L  &mt RGUI SEMI  &kp SQT
-&kp LSHFT            &kp Z       &kp X       &kp C                    &kp V         &kp B                  &kp SPACE              &kp DOWN              &kp N            &kp M         &kp COMMA           &kp DOT     &kp FSLH       &mt RIGHT_SHIFT ENTER
-                                             &mt RIGHT_ALT BACKSPACE  &lt 3 PERIOD  &mt RIGHT_SHIFT SPACE                                               &mt RCTRL ENTER  &lt 1 DEL     &mt LGUI BACKSLASH
+&kp TAB              &kp Q       &kp W       &kp E           &kp R         &kp T                          &kp UP                &kp Y   &kp U            &kp I           &kp O       &kp P          &kp LEFT_BRACKET
+&mt CAPSLOCK ESCAPE  &mt LGUI A  &mt LALT S  &mt CAPSLOCK D  &mt LSHIFT F  &kp G                &kp LEFT  &kp ENTER  &kp RIGHT  &kp H   &mt RSHIFT J     &mt CAPSLOCK K  &mt LALT L  &mt RGUI SEMI  &kp SQT
+&kp LSHFT            &kp Z       &kp X       &kp C           &kp V         &kp B   &kp SPACE              &kp DOWN              &kp N   &kp M            &kp COMMA       &kp DOT     &kp FSLH       &mt RIGHT_SHIFT ENTER
+                                             &trans          &lt 3 PERIOD  &trans                                               &trans  &lt 1 BACKSPACE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -175,10 +175,10 @@
         layer_num {
             display-name = "num_row";
             bindings = <
-&kp GRAVE           &kp NUMBER_1          &kp NUMBER_2      &kp NUMBER_3             &kp NUMBER_4       &kp N5                                        &kp UP                &kp N6           &kp N7           &kp N8              &kp N9                     &kp N0         &kp MINUS
-&mt CAPSLOCK TILDE  &mt LGUI EXCLAMATION  &mt LALT AT_SIGN  &mt CAPSLOCK HASH        &mt LSHIFT DOLLAR  &kp PERCENT                         &kp LEFT  &kp ENTER  &kp RIGHT  &kp CARET        &mt RSHIFT AMPS  &mt CAPSLOCK ASTRK  &mt LALT LEFT_PARENTHESIS  &mt RGUI RPAR  &kp UNDER
-&mt LSHFT F12       &kp F1                &kp F2            &kp F3                   &kp F4             &kp F5                 &kp SPACE              &kp DOWN              &kp F6           &kp F7           &kp F8              &kp F9                     &kp F10        &mt RIGHT_SHIFT F11
-                                                            &mt RIGHT_ALT BACKSPACE  &lt 2 PERIOD       &mt RIGHT_SHIFT SPACE                                               &mt RCTRL ENTER  &lt 3 DEL        &mt LGUI BACKSLASH
+&kp GRAVE           &kp NUMBER_1          &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4       &kp N5                              &kp UP                &kp N6     &kp N7           &kp N8              &kp N9                     &kp N0         &kp MINUS
+&mt CAPSLOCK TILDE  &mt LGUI EXCLAMATION  &mt LALT AT_SIGN  &mt CAPSLOCK HASH  &mt LSHIFT DOLLAR  &kp PERCENT               &kp LEFT  &kp ENTER  &kp RIGHT  &kp CARET  &mt RSHIFT AMPS  &mt CAPSLOCK ASTRK  &mt LALT LEFT_PARENTHESIS  &mt RGUI RPAR  &kp UNDER
+&mt LSHFT F12       &kp F1                &kp F2            &kp F3             &kp F4             &kp F5       &kp SPACE              &kp DOWN              &kp F6     &kp F7           &kp F8              &kp F9                     &kp F10        &mt RIGHT_SHIFT F11
+                                                            &trans             &lt 2 PERIOD       &trans                                                    &trans     &lt 3 BACKSPACE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -187,10 +187,10 @@
         layer_7 {
             display-name = "muv";
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2             &bt BT_SEL 3   &bt BT_SEL 4                                  &kp UP                &kp HOME         &kp PAGE_DOWN    &kp PG_UP           &kp END         &kp INS               &kp DELETE
-&bt BT_CLR      &bt BT_DISC 0    &bt BT_DISC 1   &bt BT_DISC 2            &bt BT_DISC 3  &bt BT_DISC 4                       &kp LEFT  &kp ENTER  &kp RIGHT  &kp LEFT         &mt RSHIFT DOWN  &mt CAPSLOCK UP     &mt LALT RIGHT  &mt RGUI PRINTSCREEN  &kp C_MENU
-&rgb_ug RGB_ON  &rgb_ug RGB_OFF  &studio_unlock  &sys_reset               &bootloader    &kp C                  &kp SPACE              &kp DOWN              &out OUT_BLE     &kp C_VOL_UP     &kp C_VOL_DN        &kp C_MUTE      &out OUT_USB          &out OUT_BLE
-                                                 &mt RIGHT_ALT BACKSPACE  &lt 3 PERIOD   &mt RIGHT_SHIFT SPACE                                               &mt RCTRL ENTER  &lt 3 DEL        &mt LGUI BACKSLASH
+&bt BT_CLR_ALL  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                          &kp UP                &kp HOME      &kp PAGE_DOWN    &kp PG_UP        &kp END         &kp INS               &kp DELETE
+&bt BT_CLR      &bt BT_DISC 0    &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4               &kp LEFT  &kp ENTER  &kp RIGHT  &kp LEFT      &mt RSHIFT DOWN  &mt CAPSLOCK UP  &mt LALT RIGHT  &mt RGUI PRINTSCREEN  &kp C_MENU
+&rgb_ug RGB_ON  &rgb_ug RGB_OFF  &studio_unlock  &sys_reset     &bootloader    &kp C          &kp SPACE              &kp DOWN              &out OUT_BLE  &kp C_VOL_UP     &kp C_VOL_DN     &kp C_MUTE      &out OUT_USB          &out OUT_BLE
+                                                 &trans         &lt 3 PERIOD   &trans                                                      &trans        &lt 3 BACKSPACE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
