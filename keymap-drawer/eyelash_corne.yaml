@@ -43,11 +43,11 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: ., h: num_row}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: home_row}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:backspace$$', h: home_row}
   - {t: \, h: LGUI, s: '|'}
   home_row:
   - $$mdi:keyboard-tab$$
@@ -92,12 +92,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: ., h: muv}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: home_row, type: held}
-  - {t: \, h: LGUI, s: '|'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', h: home_row, type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   num_row:
   - {t: '`', s: '~'}
   - '1'
@@ -141,12 +141,12 @@ layers:
   - F9
   - F10
   - {t: F11, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: ., h: num_row, type: held}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: muv}
-  - {t: \, h: LGUI, s: '|'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', h: muv}
+  - {t: '$$mdi:transfer$$', type: trans}
   muv:
   - BT CLR ALL
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -190,12 +190,12 @@ layers:
   - $$mdi:volume-off$$
   - OUT USB
   - OUT BLE
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: ., h: muv, type: held}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: muv, type: held}
-  - {t: \, h: LGUI, s: '|'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', h: muv, type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [4, 5]
   k: {t: '[', s: '{'}
