@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-option$$'}
   - Q
   - W
   - E
@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '[', s: '{'}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-caps$$'}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
   - D
@@ -43,61 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: ., h: num_row}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace$$', h: home_row}
-  - {t: \, h: LGUI, s: '|'}
-  home_row:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '[', s: '{'}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-caps$$'}
-  - {t: A, h: LGUI}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-caps$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-right-bold$$
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-caps$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RGUI, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:keyboard-space$$
-  - $$mdi:arrow-down-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ., h: muv}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', h: home_row, type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', h: muv}
+  - {t: \, h: '$$mdi:apple-keyboard-option$$', s: '|'}
   num_row:
   - {t: '`', s: '~'}
   - '1'
@@ -112,10 +63,10 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '-', s: _}
-  - {t: '~', h: '$$mdi:apple-keyboard-caps$$'}
+  - {t: '~', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '!', h: LGUI}
   - {t: '@', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '#', h: '$$mdi:apple-keyboard-caps$$'}
+  - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
   - {t: $, h: '$$mdi:apple-keyboard-shift$$'}
   - '%'
   - $$mdi:arrow-left-bold$$
@@ -123,10 +74,10 @@ layers:
   - $$mdi:arrow-right-bold$$
   - ^
   - {t: '&', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '*', h: '$$mdi:apple-keyboard-caps$$'}
+  - {t: '*', h: '$$mdi:apple-keyboard-control$$'}
   - {t: (, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ), h: RGUI}
-  - _
+  - +
   - {t: F12, h: '$$mdi:apple-keyboard-shift$$'}
   - F1
   - F2
@@ -145,9 +96,107 @@ layers:
   - {t: ., h: num_row, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', h: muv}
+  - {t: '$$mdi:backspace$$', h: home_row}
   - {t: '$$mdi:transfer$$', type: trans}
   muv:
+  - $$mdi:apple-keyboard-option$$
+  - A
+  - '|'
+  - (
+  - )
+  - +
+  - $$mdi:arrow-up-bold$$
+  - HOME
+  - PgDn
+  - PG UP
+  - END
+  - INS
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - A
+  - {t: \, s: '|'}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: '=', s: +}
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: PRINTSCREEN, h: RGUI}
+  - MENU
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - _
+  - '{'
+  - '}'
+  - {t: '-', s: _}
+  - $$mdi:keyboard-space$$
+  - $$mdi:arrow-down-bold$$
+  - A
+  - A
+  - A
+  - A
+  - A
+  - A
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ., h: home_row}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', h: muv, type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  home_row:
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-option$$'}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-up-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '[', s: '{'}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: LGUI}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - G
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: RGUI, s: ':'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-shift$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:keyboard-space$$
+  - $$mdi:arrow-down-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ., h: home_row, type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', h: home_row, type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  tx:
   - BT CLR ALL
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -171,59 +220,62 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:arrow-up-bold$$', h: '$$mdi:apple-keyboard-caps$$'}
-  - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: PRINTSCREEN, h: RGUI}
   - MENU
-  - RGB ON
-  - RGB OFF
-  - '&studio_unlock'
+  - tx
+  - tx
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
-  - C
+  - OUT BLE
+  - OUT USB
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - OUT BLE
   - $$mdi:volume-high$$
   - $$mdi:volume-low$$
   - $$mdi:volume-off$$
-  - OUT USB
-  - OUT BLE
+  - '&bl BL_ON'
+  - '&bl BL_OFF'
+  - '&studio_unlock'
+  - {t: ., h: home_row}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ., h: muv, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', h: muv, type: held}
+  - {t: '$$mdi:backspace$$', h: home_row}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [4, 5]
   k: {t: '[', s: '{'}
-  l: [home_row]
+  l: [tx]
 - p: [18, 5]
   k: '{'
-  l: [home_row]
+  l: [tx]
 - p: [3, 2]
   k: (
-  l: [home_row]
+  l: [tx]
 - p: [7, 8]
   k: {t: ']', s: '}'}
-  l: [home_row]
+  l: [tx]
 - p: [7, 22]
   k: '}'
-  l: [home_row]
+  l: [tx]
 - p: [9, 10]
   k: )
-  l: [home_row]
+  l: [tx]
 - p: [33, 18]
   k: {t: '-', s: _}
-  l: [home_row]
+  l: [tx]
 - p: [33, 32]
   k: _
-  l: [home_row]
+  l: [tx]
 - p: [22, 36]
   k: +
-  l: [home_row]
+  l: [tx]
 - p: [36, 37]
   k: {t: '=', s: +}
-  l: [home_row]
+  l: [tx]
+- p: [28, 29]
+  k: {t: tx, h: toggle}
+  l: [QWERTY]
