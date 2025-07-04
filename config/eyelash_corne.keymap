@@ -146,8 +146,9 @@
         };
 
         new_layer {
-            bindings = <&to 5>;
+            bindings = <&to 4>;
             key-positions = <28 29>;
+            layers = <0>;
         };
     };
 
