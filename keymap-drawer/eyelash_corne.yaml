@@ -225,7 +225,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: PRINTSCREEN, h: RGUI}
   - MENU
-  - {t: A, type: held alternate}
+  - A
   - {t: A, h: tx, type: held}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
@@ -246,39 +246,6 @@ layers:
   - {t: '$$mdi:backspace$$', h: tx}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [4, 5]
-  k: {t: '[', s: '{'}
-  l: [tx]
-- p: [18, 5]
-  k: '{'
-  l: [tx]
-- p: [3, 2]
-  k: (
-  l: [tx]
-- p: [7, 8]
-  k: {t: ']', s: '}'}
-  l: [tx]
-- p: [7, 22]
-  k: '}'
-  l: [tx]
-- p: [9, 10]
-  k: )
-  l: [tx]
-- p: [33, 18]
-  k: {t: '-', s: _}
-  l: [tx]
-- p: [33, 32]
-  k: _
-  l: [tx]
-- p: [22, 36]
-  k: +
-  l: [tx]
-- p: [36, 37]
-  k: {t: '=', s: +}
-  l: [tx]
-- p: [28, 29]
-  k: tx
-  l: [QWERTY]
 - p: [5, 7]
   k: {t: /, s: '?'}
   l: [num_row]
@@ -309,3 +276,6 @@ combos:
 - p: [38, 39]
   k: '"'
   l: [num_row]
+- p: [28, 29]
+  k: {t: tx, h: toggle}
+  l: [muv]
