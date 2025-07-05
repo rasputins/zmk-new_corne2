@@ -225,7 +225,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: PRINTSCREEN, h: RGUI}
   - MENU
-  - A
+  - {t: A, type: held alternate}
   - {t: A, h: tx, type: held}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
@@ -276,3 +276,6 @@ combos:
 - p: [36, 37]
   k: {t: '=', s: +}
   l: [tx]
+- p: [28, 29]
+  k: tx
+  l: [QWERTY]
