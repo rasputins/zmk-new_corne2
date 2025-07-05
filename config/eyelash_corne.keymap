@@ -145,10 +145,70 @@
             timeout-ms = <30>;
         };
 
-        cb111 {
+        comb11 {
             bindings = <&mo 4>;
             key-positions = <28 29>;
             layers = <0>;
+        };
+
+        comb13 {
+            bindings = <&kp FSLH>;
+            key-positions = <5 7>;
+            layers = <1>;
+        };
+
+        comb14 {
+            bindings = <&kp QMARK>;
+            key-positions = <18 22>;
+            layers = <1>;
+        };
+
+        comb15 {
+            bindings = <&kp LT>;
+            key-positions = <4 3>;
+            layers = <1>;
+        };
+
+        comb16 {
+            bindings = <&kp GT>;
+            key-positions = <8 9>;
+            layers = <1>;
+        };
+
+        comb17 {
+            bindings = <&kp COMMA>;
+            key-positions = <3 2>;
+            layers = <1>;
+        };
+
+        comb18 {
+            bindings = <&kp DOT>;
+            key-positions = <9 10>;
+            layers = <1>;
+        };
+
+        comb19 {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <31 32>;
+            layers = <1>;
+        };
+
+        comb20 {
+            bindings = <&kp COLON>;
+            key-positions = <31 30>;
+            layers = <1>;
+        };
+
+        comb22 {
+            bindings = <&kp SQT>;
+            key-positions = <37 38>;
+            layers = <1>;
+        };
+
+        comb23 {
+            bindings = <&kp DQT>;
+            key-positions = <38 39>;
+            layers = <1>;
         };
     };
 
@@ -161,7 +221,7 @@
 &mt LALT TAB      &kp Q  &kp W  &kp E             &kp R         &kp T                                         &kp UP                &kp Y            &kp U            &kp I               &kp O    &kp P     &kp LEFT_BRACKET
 &mt LCTRL ESCAPE  &kp A  &kp S  &kp D             &kp F         &kp G                               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J            &kp K               &kp L    &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z  &kp X  &kp C             &kp V         &kp B                  &kp SPACE              &kp DOWN              &kp N            &kp M            &kp COMMA           &kp DOT  &kp FSLH  &mt RIGHT_SHIFT ENTER
-                                &mt LEFT_GUI DEL  &lt 1 PERIOD  &mt RIGHT_SHIFT ENTER                                               &mt RCTRL SPACE  &lt 2 BACKSPACE  &mt RALT BACKSLASH
+                                &mt LEFT_GUI DEL  &lt 2 PERIOD  &mt RIGHT_SHIFT ENTER                                               &mt RCTRL SPACE  &lt 1 BACKSPACE  &mt RALT BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -173,7 +233,7 @@
 &mt LALT GRAVE   &kp NUMBER_1          &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4       &kp N5                              &kp UP                &kp N6     &kp N7           &kp N8           &kp N9                     &kp N0         &kp MINUS
 &mt LCTRL TILDE  &mt LGUI EXCLAMATION  &mt LALT AT_SIGN  &mt RCTRL HASH  &mt LSHIFT DOLLAR  &kp PERCENT               &kp LEFT  &kp ENTER  &kp RIGHT  &kp CARET  &mt RSHIFT AMPS  &mt RCTRL ASTRK  &mt LALT LEFT_PARENTHESIS  &mt RGUI RPAR  &kp UNDER
 &mt LSHFT LBRC   &kp LBKT              &kp LPAR          &kp BSLH        &kp EQUAL          &kp PLUS     &kp SPACE              &kp DOWN              &kp MINUS  &kp UNDERSCORE   &kp PIPE         &kp RIGHT_PARENTHESIS      &kp RBKT       &mt RIGHT_SHIFT RBRC
-                                                         &trans          &lt 1 PERIOD       &trans                                                    &trans     &lt 3 BACKSPACE  &trans
+                                                         &trans          &lt 3 PERIOD       &trans                                                    &trans     &lt 1 BACKSPACE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -185,7 +245,7 @@
 &kp RIGHT_ALT   &kp A    &kp F1  &kp F2   &kp F3        &kp F4                          &kp UP                &kp HOME  &kp PAGE_DOWN    &kp PG_UP  &kp END    &kp INS               &kp DELETE
 &mt LCTRL ESC   &kp A    &kp F5  &kp F6   &kp F7        &kp F8                &kp LEFT  &kp ENTER  &kp RIGHT  &kp LEFT  &kp DOWN         &kp UP     &kp RIGHT  &mt RGUI PRINTSCREEN  &kp C_MENU
 &kp LEFT_SHIFT  &lt 4 A  &kp F9  &kp F10  &kp F11       &kp F12  &kp SPACE              &kp DOWN              &kp A     &kp A            &kp A      &kp A      &kp A                 &mt RIGHT_SHIFT A
-                                 &trans   &lt 3 PERIOD  &trans                                                &trans    &lt 2 BACKSPACE  &trans
+                                 &trans   &lt 2 PERIOD  &trans                                                &trans    &lt 3 BACKSPACE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
