@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: ., h: num_row}
+  - {t: ., h: muv}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace$$', h: muv}
+  - {t: '$$mdi:backspace$$', h: num_row}
   - {t: \, h: '$$mdi:apple-keyboard-option$$', s: '|'}
   num_row:
   - {t: '`', h: '$$mdi:apple-keyboard-option$$', s: '~'}
@@ -93,10 +93,10 @@ layers:
   - {t: ']', s: '}'}
   - {t: '}', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ., h: num_row, type: held}
+  - {t: ., h: home_row}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', h: home_row}
+  - {t: '$$mdi:backspace$$', h: num_row, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   muv:
   - $$mdi:apple-keyboard-option$$
@@ -142,10 +142,10 @@ layers:
   - A
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ., h: home_row}
+  - {t: ., h: muv, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', h: muv, type: held}
+  - {t: '$$mdi:backspace$$', h: home_row}
   - {t: '$$mdi:transfer$$', type: trans}
   home_row:
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-option$$'}
@@ -240,10 +240,10 @@ layers:
   - '&bl BL_ON'
   - '&bl BL_OFF'
   - '&studio_unlock'
-  - {t: ., h: home_row}
+  - {t: ., h: home_row, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', h: tx, type: held}
+  - {t: '$$mdi:backspace$$', h: tx}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [4, 5]
@@ -279,3 +279,33 @@ combos:
 - p: [28, 29]
   k: tx
   l: [QWERTY]
+- p: [5, 7]
+  k: {t: /, s: '?'}
+  l: [num_row]
+- p: [18, 22]
+  k: '?'
+  l: [num_row]
+- p: [4, 3]
+  k: <
+  l: [num_row]
+- p: [8, 9]
+  k: '>'
+  l: [num_row]
+- p: [3, 2]
+  k: {t: ',', s: <}
+  l: [num_row]
+- p: [9, 10]
+  k: {t: ., s: '>'}
+  l: [num_row]
+- p: [31, 32]
+  k: {t: ;, s: ':'}
+  l: [num_row]
+- p: [31, 30]
+  k: ':'
+  l: [num_row]
+- p: [37, 38]
+  k: {t: '''', s: '"'}
+  l: [num_row]
+- p: [38, 39]
+  k: '"'
+  l: [num_row]
