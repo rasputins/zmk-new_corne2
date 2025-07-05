@@ -65,92 +65,6 @@
     combos {
         compatible = "zmk,combos";
 
-        tru {
-            bindings = <&kp LBKT>;
-            key-positions = <4 5>;
-            slow-release;
-            layers = <4>;
-            timeout-ms = <30>;
-        };
-
-        comb {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <18 5>;
-            slow-release;
-            layers = <4>;
-            timeout-ms = <30>;
-        };
-
-        comb3 {
-            bindings = <&kp LPAR>;
-            key-positions = <3 2>;
-            slow-release;
-            layers = <4>;
-            timeout-ms = <30>;
-        };
-
-        comb4 {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <7 8>;
-            slow-release;
-            layers = <4>;
-            timeout-ms = <30>;
-        };
-
-        comb5 {
-            bindings = <&kp RBRC>;
-            key-positions = <7 22>;
-            slow-release;
-            layers = <4>;
-            timeout-ms = <30>;
-        };
-
-        comb6 {
-            bindings = <&kp RPAR>;
-            key-positions = <9 10>;
-            slow-release;
-            layers = <4>;
-            timeout-ms = <30>;
-        };
-
-        comb7 {
-            bindings = <&kp MINUS>;
-            key-positions = <33 18>;
-            slow-release;
-            layers = <4>;
-            timeout-ms = <30>;
-        };
-
-        comb8 {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <33 32>;
-            slow-release;
-            layers = <4>;
-            timeout-ms = <30>;
-        };
-
-        comb9 {
-            bindings = <&kp PLUS>;
-            key-positions = <22 36>;
-            slow-release;
-            layers = <4>;
-            timeout-ms = <30>;
-        };
-
-        comb10 {
-            bindings = <&kp EQUAL>;
-            key-positions = <36 37>;
-            slow-release;
-            layers = <4>;
-            timeout-ms = <30>;
-        };
-
-        comb11 {
-            bindings = <&mo 4>;
-            key-positions = <28 29>;
-            layers = <0>;
-        };
-
         comb13 {
             bindings = <&kp FSLH>;
             key-positions = <5 7>;
@@ -209,6 +123,12 @@
             bindings = <&kp DQT>;
             key-positions = <38 39>;
             layers = <1>;
+        };
+
+        comb11 {
+            bindings = <&to 4>;
+            key-positions = <28 29>;
+            layers = <2>;
         };
     };
 
