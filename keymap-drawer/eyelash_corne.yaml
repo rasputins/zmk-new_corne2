@@ -128,7 +128,7 @@ layers:
   - {t: PRINTSCREEN, h: RGUI}
   - MENU
   - $$mdi:apple-keyboard-shift$$
-  - A
+  - {t: A, h: tx}
   - F9
   - F10
   - F11
@@ -225,8 +225,8 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: PRINTSCREEN, h: RGUI}
   - MENU
-  - tx
-  - tx
+  - A
+  - {t: A, h: tx, type: held}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
   - OUT BLE
@@ -243,7 +243,7 @@ layers:
   - {t: ., h: home_row}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', h: home_row}
+  - {t: '$$mdi:backspace$$', h: tx, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [4, 5]
@@ -276,6 +276,3 @@ combos:
 - p: [36, 37]
   k: {t: '=', s: +}
   l: [tx]
-- p: [28, 29]
-  k: {t: tx, h: toggle}
-  l: [QWERTY]
