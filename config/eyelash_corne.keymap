@@ -144,12 +144,6 @@
             layers = <4>;
             timeout-ms = <30>;
         };
-
-        new_layer {
-            bindings = <&to 4>;
-            key-positions = <28 29>;
-            layers = <0>;
-        };
     };
 
     keymap {
@@ -182,10 +176,10 @@
         layer_7 {
             display-name = "muv";
             bindings = <
-&kp RIGHT_ALT   &kp A  &kp F1  &kp F2   &kp F3        &kp F4                          &kp UP                &kp HOME  &kp PAGE_DOWN    &kp PG_UP  &kp END    &kp INS               &kp DELETE
-&mt LCTRL ESC   &kp A  &kp F5  &kp F6   &kp F7        &kp F8                &kp LEFT  &kp ENTER  &kp RIGHT  &kp LEFT  &kp DOWN         &kp UP     &kp RIGHT  &mt RGUI PRINTSCREEN  &kp C_MENU
-&kp LEFT_SHIFT  &kp A  &kp F9  &kp F10  &kp F11       &kp F12  &kp SPACE              &kp DOWN              &kp A     &kp A            &kp A      &kp A      &kp A                 &mt RIGHT_SHIFT A
-                               &trans   &lt 3 PERIOD  &trans                                                &trans    &lt 2 BACKSPACE  &trans
+&kp RIGHT_ALT   &kp A    &kp F1  &kp F2   &kp F3        &kp F4                          &kp UP                &kp HOME  &kp PAGE_DOWN    &kp PG_UP  &kp END    &kp INS               &kp DELETE
+&mt LCTRL ESC   &kp A    &kp F5  &kp F6   &kp F7        &kp F8                &kp LEFT  &kp ENTER  &kp RIGHT  &kp LEFT  &kp DOWN         &kp UP     &kp RIGHT  &mt RGUI PRINTSCREEN  &kp C_MENU
+&kp LEFT_SHIFT  &lt 4 A  &kp F9  &kp F10  &kp F11       &kp F12  &kp SPACE              &kp DOWN              &kp A     &kp A            &kp A      &kp A      &kp A                 &mt RIGHT_SHIFT A
+                                 &trans   &lt 3 PERIOD  &trans                                                &trans    &lt 2 BACKSPACE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -208,8 +202,8 @@
             bindings = <
 &bt BT_CLR_ALL  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3   &bl BL_ON                            &kp UP                &kp HOME      &kp PAGE_DOWN    &kp PG_UP     &kp END     &kp INS               &kp DELETE
 &bt BT_CLR      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &bt BT_DISC 3  &bl BL_OFF                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT   &mt RGUI PRINTSCREEN  &kp C_MENU
-&mo 4           &mo 4          &sys_reset     &bootloader     &out OUT_BLE   &out OUT_USB  &kp SPACE              &kp DOWN              &out OUT_BLE  &kp C_VOL_UP     &kp C_VOL_DN  &kp C_MUTE  &bl BL_ON             &bl BL_OFF
-                                              &studio_unlock  &lt 3 PERIOD   &trans                                                     &trans        &lt 3 BACKSPACE  &trans
+&kp A           &lt 4 A        &sys_reset     &bootloader     &out OUT_BLE   &out OUT_USB  &kp SPACE              &kp DOWN              &out OUT_BLE  &kp C_VOL_UP     &kp C_VOL_DN  &kp C_MUTE  &bl BL_ON             &bl BL_OFF
+                                              &studio_unlock  &lt 3 PERIOD   &trans                                                     &trans        &lt 4 BACKSPACE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
