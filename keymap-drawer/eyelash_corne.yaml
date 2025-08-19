@@ -79,18 +79,18 @@ layers:
   - {t: ), h: RGUI}
   - _
   - {t: '{', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '[', s: '{'}
-  - (
   - {t: \, s: '|'}
+  - (
+  - {t: '[', s: '{'}
   - {t: '=', s: +}
   - +
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - {t: '-', s: _}
   - _
-  - '|'
-  - )
   - {t: ']', s: '}'}
+  - )
+  - '|'
   - {t: '}', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ., h: home_row}
@@ -279,3 +279,9 @@ combos:
 - p: [28, 29]
   k: {t: tx, h: toggle}
   l: [muv]
+- p: [4, 5]
+  k: '{'
+  l: [num_row]
+- p: [7, 8]
+  k: '}'
+  l: [num_row]
