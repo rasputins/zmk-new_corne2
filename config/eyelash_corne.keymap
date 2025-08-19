@@ -130,6 +130,18 @@
             key-positions = <28 29>;
             layers = <2>;
         };
+
+        comb24 {
+            bindings = <&kp LBRC>;
+            key-positions = <4 5>;
+            layers = <1>;
+        };
+
+        comb25 {
+            bindings = <&kp RBRC>;
+            key-positions = <7 8>;
+            layers = <1>;
+        };
     };
 
     keymap {
@@ -152,7 +164,7 @@
             bindings = <
 &mt LALT GRAVE   &kp NUMBER_1          &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4       &kp N5                              &kp UP                &kp N6     &kp N7           &kp N8           &kp N9                     &kp N0         &kp MINUS
 &mt LCTRL TILDE  &mt LGUI EXCLAMATION  &mt LALT AT_SIGN  &mt RCTRL HASH  &mt LSHIFT DOLLAR  &kp PERCENT               &kp LEFT  &kp ENTER  &kp RIGHT  &kp CARET  &mt RSHIFT AMPS  &mt RCTRL ASTRK  &mt LALT LEFT_PARENTHESIS  &mt RGUI RPAR  &kp UNDER
-&mt LSHFT LBRC   &kp LBKT              &kp LPAR          &kp BSLH        &kp EQUAL          &kp PLUS     &kp SPACE              &kp DOWN              &kp MINUS  &kp UNDERSCORE   &kp PIPE         &kp RIGHT_PARENTHESIS      &kp RBKT       &mt RIGHT_SHIFT RBRC
+&mt LSHFT LBRC   &kp BSLH              &kp LPAR          &kp LBKT        &kp EQUAL          &kp PLUS     &kp SPACE              &kp DOWN              &kp MINUS  &kp UNDERSCORE   &kp RBKT         &kp RIGHT_PARENTHESIS      &kp PIPE       &mt RIGHT_SHIFT RBRC
                                                          &trans          &lt 3 PERIOD       &trans                                                    &trans     &lt 1 BACKSPACE  &trans
             >;
 
