@@ -162,10 +162,10 @@
         layer_num {
             display-name = "num_row";
             bindings = <
-&mt LALT GRAVE   &kp NUMBER_1          &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4       &kp N5                              &kp UP                &kp N6     &kp N7           &kp N8           &kp N9                     &kp N0         &kp MINUS
-&mt LCTRL TILDE  &mt LGUI EXCLAMATION  &mt LALT AT_SIGN  &mt RCTRL HASH  &mt LSHIFT DOLLAR  &kp PERCENT               &kp LEFT  &kp ENTER  &kp RIGHT  &kp CARET  &mt RSHIFT AMPS  &mt RCTRL ASTRK  &mt LALT LEFT_PARENTHESIS  &mt RGUI RPAR  &kp UNDER
-&mt LSHFT LBRC   &kp BSLH              &kp LPAR          &kp LBKT        &kp EQUAL          &kp PLUS     &kp SPACE              &kp DOWN              &kp MINUS  &kp UNDERSCORE   &kp RBKT         &kp RIGHT_PARENTHESIS      &kp PIPE       &mt RIGHT_SHIFT RBRC
-                                                         &trans          &lt 3 PERIOD       &trans                                                    &trans     &lt 1 BACKSPACE  &trans
+&mt LALT GRAVE         &kp NUMBER_1            &kp NUMBER_2           &kp NUMBER_3             &kp NUMBER_4      &kp N5                            &kp UP                &kp N6          &kp N7           &kp N8        &kp N9      &kp N0         &kp MINUS
+&mt LCTRL LEFT_BRACE   &mt LEFT_GUI BACKSLASH  &mt LALT LEFT_BRACKET  &mt RCTRL RIGHT_BRACKET  &mt LSHIFT EQUAL  &kp PLUS                &kp LEFT  &kp ENTER  &kp RIGHT  &kp LEFT_ARROW  &kp DOWN         &kp UP_ARROW  &kp RIGHT   &kp SEMICOLON  &kp SQT
+&mt LSHFT RIGHT_BRACE  &kp PIPE                &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS    &kp UNDER         &kp MINUS  &kp SPACE              &kp DOWN              &kp A           &kp A            &kp COMMA     &kp PERIOD  &kp SLASH      &mt RIGHT_SHIFT RBRC
+                                                                      &trans                   &lt 3 PERIOD      &trans                                                  &trans          &lt 1 BACKSPACE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -174,10 +174,10 @@
         layer_7 {
             display-name = "muv";
             bindings = <
-&kp RIGHT_ALT   &kp A    &kp F1  &kp F2   &kp F3        &kp F4                          &kp UP                &kp HOME  &kp PAGE_DOWN    &kp PG_UP  &kp END    &kp INS               &kp DELETE
-&mt LCTRL ESC   &kp A    &kp F5  &kp F6   &kp F7        &kp F8                &kp LEFT  &kp ENTER  &kp RIGHT  &kp LEFT  &kp DOWN         &kp UP     &kp RIGHT  &mt RGUI PRINTSCREEN  &kp C_MENU
-&kp LEFT_SHIFT  &lt 4 A  &kp F9  &kp F10  &kp F11       &kp F12  &kp SPACE              &kp DOWN              &kp A     &kp A            &kp A      &kp A      &kp A                 &mt RIGHT_SHIFT A
-                                 &trans   &lt 2 PERIOD  &trans                                                &trans    &lt 3 BACKSPACE  &trans
+&kp RIGHT_ALT   &kp PRINTSCREEN  &kp END       &kp PG_DN  &kp PG_UP       &kp HOME                         &kp UP                &kp F1  &kp F2           &kp F3   &kp F4   &kp A  &kp DELETE
+&mt LCTRL ESC   &kp LGUI         &kp LEFT_ALT  &kp RCTRL  &kp LEFT_SHIFT  &kp INS                &kp LEFT  &kp ENTER  &kp RIGHT  &kp F5  &kp F6           &kp F7   &kp F8   &kp A  &kp C_MENU
+&kp LEFT_SHIFT  &lt 4 A          &kp A         &kp A      &kp A           &kp A     &kp SPACE              &kp DOWN              &kp F9  &kp F10          &kp F11  &kp F12  &kp A  &mt RIGHT_SHIFT A
+                                               &trans     &lt 2 PERIOD    &trans                                                 &trans  &lt 3 BACKSPACE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
