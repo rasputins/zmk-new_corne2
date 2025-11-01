@@ -63,7 +63,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '-', s: _}
-  - {t: '{', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: \, h: '$$mdi:apple-keyboard-command$$', s: '|'}
   - {t: '[', h: '$$mdi:apple-keyboard-option$$', s: '{'}
   - {t: ']', h: '$$mdi:apple-keyboard-control$$', s: '}'}
@@ -72,13 +72,13 @@ layers:
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: ;, s: ':'}
+  - {t: '-', s: _}
+  - {t: _, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '{', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '}', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: RGUI, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '}', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - '|'
   - (
   - )
@@ -91,7 +91,7 @@ layers:
   - {t: ',', s: <}
   - .
   - {t: /, s: '?'}
-  - {t: '}', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ., h: home_row}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -99,33 +99,33 @@ layers:
   - {t: '$$mdi:backspace$$', h: num_row, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   muv:
-  - $$mdi:apple-keyboard-option$$
-  - PRINTSCREEN
-  - END
-  - PG DN
-  - PG UP
-  - HOME
-  - $$mdi:arrow-up-bold$$
+  - F12
   - F1
   - F2
   - F3
   - F4
-  - A
-  - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
-  - LGUI
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - INS
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-right-bold$$
   - F5
+  - $$mdi:arrow-up-bold$$
   - F6
   - F7
   - F8
+  - F9
+  - F10
+  - F11
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: LGUI}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - A
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - Ins
   - MENU
   - $$mdi:apple-keyboard-shift$$
   - {t: A, h: tx}
@@ -135,11 +135,11 @@ layers:
   - A
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - F9
-  - F10
-  - F11
-  - F12
-  - A
+  - HOME
+  - PgDn
+  - PG UP
+  - END
+  - PRINTSCREEN
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ., h: muv, type: held}
